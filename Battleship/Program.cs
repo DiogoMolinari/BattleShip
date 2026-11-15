@@ -28,19 +28,6 @@ void InitializeBoards()
     }
 }
 
-void DisplayBoards(char[,] matrix)
-{
-    for (int i = 0; i < 10; i++)
-    {
-        for (int j = 0; j < 10; j++)
-        {
-            Console.Write(matrix[i, j]);
-        }
-        Console.WriteLine();
-    }
-}
-
-
 void PositionShips(char[,] matrix)
 {
     for (int currentShip = 0; currentShip < ShipSizes.Length; currentShip++)
